@@ -5,13 +5,15 @@ i u njega staviti 3 nastavnika i dva studenta. Nakon toga program
 treba u petlji ispisati ime i prezime svake osobe te na kraju
 petlje prosjecnu placu svih nastavnika koji se pojavljuju u polju.
 Takoder, za sljedeci isjecak koda:
-    val p1 = Person("Ivo", "Ivic", 20)
-    val p2 = Person("Ivo", "Ivic", 20)
-    val p3 = Student("Ivo", "Ivic", 20, "0036312123", 3)
-    val p4 = Student("Marko", "Markovic", 25, "0036312123", 5)
-    println(p1.equals(p2))
-    println(p1.equals(p4))
-    println(p3.equals(p4))
+Person p1 = new Person("Ivo", "Ivic", 20);
+Person p2 = new Person("Ivo", "Ivic", 20);
+Student p3 = new Student("Ivo", "Ivic", 20, "0036312123", (short)3);
+Student p4 = new Student("Marko", "Markovic", 25, "0036312123", (short)5);
+
+System.out.println(p1.equals(p2));
+System.out.println(p1.equals(p4));
+System.out.println(p3.equals(p4));
+System.out.println();
 Ocekuje ovakav ispis:
 true
 false
